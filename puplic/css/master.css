@@ -304,6 +304,18 @@ section .right .poly {
     }
 }
 
+@media screen and (max-width : 480px) {
+    section {
+        padding: 0 30px;
+        .left {
+            h3 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+}
+
 
 /* Section Style End */
 
@@ -375,7 +387,7 @@ section .right .poly {
 /*           Media Project             */
 
 @media screen and (max-width : 790px) {
-    .content {
+    .project .content {
         .card img {
             width: 100% !important;
         }
@@ -388,6 +400,25 @@ section .right .poly {
             float: none;
         }
     }
+}
+
+@media screen and (max-width : 480px) {
+    .project {
+        padding: 0 30px;
+
+        .content .card {
+            max-width: 100%;
+            .desc {
+                text-align: center;  
+                span {
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
 }
 
 /* Project Style End */
@@ -451,6 +482,12 @@ section .right .poly {
         }
     }
 }
+
+@media screen and (max-width : 480px) {
+    .about .left {
+        width: 100%;
+    }
+}
 /* About Style End */
 
 /* Contact Style Start */
@@ -495,6 +532,7 @@ section .right .poly {
 
 .contact form button {
     width: fit-content;
+    margin: 1.5rem 0;
     font-weight: bold;
     padding: 1ex 3ex;
     border-radius: 8px;
@@ -506,6 +544,18 @@ section .right .poly {
 .contact h3 {
     padding: 1rem 0;
     color: var(--text-gray-color);
+}
+
+/*                Media Contact               */
+@media screen and (max-width : 768px) {
+    .contact form {
+        width: 100%;
+
+        button {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
 
 /* Contact Style End */
@@ -525,6 +575,15 @@ footer .info {
     display: flex;
     color: var(--text-black-color);
     justify-content: space-evenly;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+/*                Media Footer               */
+@media screen and (max-width : 480px) {
+    footer .info {
+        flex-direction: column;
+        padding-bottom: 15px;
+        gap: 10px;
+    }
 }
 /* Footer Style End */
